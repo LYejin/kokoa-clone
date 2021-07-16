@@ -1,3 +1,3 @@
 # koko clone 2021
 
-CSS goat so much better!
+HTML & CSS are so much fun!
