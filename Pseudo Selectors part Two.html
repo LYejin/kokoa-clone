@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input:{
+                border: 1px solid wheat;
+            }
+            input:required{
+                border-color: tomato;
+            }
+            input[type="password"]{
+                background-color: thistle;
+            }
+            input[placeholder~="name"]{ 
+                background-color: pink;
+            }
+            /* ~ 는 포함하고 있다는 뜻 */
+        </style>
+    </head>
+    <body>
+        <div>
+            <form>
+                <input type="text" placeholder="First name" />
+                <input type="text" placeholder="Last name" />
+                <input type="password" required placeholder="password" />
+            </form>
+        </div>
+    </body>
+</html>
