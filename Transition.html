@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Yejin Times</title>
+        <style>
+            a{
+                color:wheat;
+                background-color: tomato;
+                text-decoration: none;
+                padding: 3px 5px;
+                border-radius: 5px;
+                transition: background-color 10s ease-in-out, color 5s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            a:hover{
+                border-radius: 20px;
+                color: tomato;
+                background-color: wheat;
+            }
+
+            /* transition이라는 속성은 state가 없는 요소에 붙어야한다.
+            또한 다른 곳에서도 있어야 한다. state에 같은 요소가 있어야 하는 것 같다.
+            state를 기준으로 변화하기 때문이다. 마우스를 뗄 경우 그만하고 원래 상태로 돌아간다. */
+        </style>
+    </head>
+    <body>
+        <a href="#">Go home</a>
+    </body>
+</html>

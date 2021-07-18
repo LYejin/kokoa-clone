@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                height: 300px;
+                margin: 100px;
+            }
+            span{
+                color: tomato;
+                background-color: yellowgreen;
+                padding: 5px;
+                border-radius: 10px;
+                text-decoration: underline;
+            }
+            input::placeholder {
+                color: yellowgreen;
+            }
+            p::selection {
+                background-color: yellowgreen;
+            }
+            /* :: 뒤에 할 수 있는 것들
+            1. selection = 드래그해서 선택하는 것을 변경
+            2. ::first-letter = 첫번째 글자 바꾸기 
+            3. ::first-line = 첫번째 줄 */
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="Name">
+            <p>dfjlisjelfijslifj</p>
+        </form>
+    </body>
+</html>

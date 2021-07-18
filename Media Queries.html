@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>The Yejin Times</title>
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            div {
+                background-color: teal;
+                width: 200px;
+                height: 200px;
+            }
+            span {
+                font-size: 36px;
+            }
+            @media screen and (orientation: landscape) {
+                span {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
+                div {
+                    background-color: wheat;
+                }
+            }
+            @media print {
+                body {
+                    background-color: tomato;
+                }
+            }
+            /* @media screen and (max-width: 600px) {
+                div {
+                    background-color: tomato;
+                }
+            }
+            @media screen and (min-width: 601px) and (max-width: 1200px) {
+                div {
+                    background-color: wheat;
+                }
+            }
+            @media screen and (min-width: 1201px) {
+                div {
+                    background-color: turquoise;
+                }
+            } */
+
+            /* orientation: landscape => 가로모드 
+                            portrait  => 세로모드 */
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <span>please flip your phone</span>
+    </body>
+</html>

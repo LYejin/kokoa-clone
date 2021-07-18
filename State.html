@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button:active {
+                background-color: tomato;
+            }
+            form{
+                border: 1px solid salmon;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+            form:focus-within{
+                border-color: seagreen;
+
+            }
+            form:hover input:focus{
+                background-color:pink;
+                
+            }
+            /* 1. :active - 클릭했을 때
+            2. :hover - 마우스가 버튼 위로 올라갔을 떄
+            3. :focus - 키보드로 선택되었을 떄 선택된 것이 그대로 계속 보여준다.(input이 여러개일때)
+            4. :visited - 방문을 했는지 안 했는지 했으면 색상을 바꾸어준다.(예: 링크) 
+            5. :focus-within : 부모에게 적용된다.  */
+        </style>
+    </head>
+    <body>
+        <div>
+            <button>hello</button>
+        </div>
+        <form>
+            <input type="text" name="" id="" />
+            <input type="text" name="" id="" />
+            <input type="text" name="" id="" />
+            <input type="text" name="" id="" />
+        </form>
+    </body>
+</html>

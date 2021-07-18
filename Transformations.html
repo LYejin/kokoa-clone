@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>The Yejin Times</title>
+        <style>
+            img {
+                border: 10px solid black;
+                border-radius: 50%;
+                /* transform: rotateY(50deg) rotateX(20deg) rotateZ(10deg);
+                transform: scale(2,2) translateX(100px) translateY(100px) 
+                transform: translateX(100px) ; */
+                transition: transform 1s ease-in-out;
+                
+            }
+            img:hover {
+                transform: rotateX(360deg) scale(0.5);
+            }
+            이미지는 텍스트랑 다르게 움직인다. 3d 애니메이션이기 때문에. 
+            transformation은 box element, 이미지에 영향을 끼치지 않는다.
+            왜냐면 픽셀 차원에서 일어나기 떄문이다. 
+        </style>
+    </head>
+    <body>
+        <img src="img.jpg" />
+        <span>sfliejlfisjlifj</span>
+    </body>
+</html>
